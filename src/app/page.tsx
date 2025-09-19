@@ -1,4 +1,6 @@
 import Image from "next/image";
+import About from "./components/about";
+import Article from "./components/article";
 
 export default function Home() {
   return (
@@ -13,12 +15,8 @@ export default function Home() {
           <p>MyExperience</p>
         </aside>
         <div className="w-1/2 bg-blue-500">
-          <section className="">
-            <h1>ABOUT</h1>
-          </section>
-          <section>
-            <h1>MyArticle</h1>
-          </section>
+          <About />
+          <Article />
           <section>
             <h1>MyActivity</h1>
           </section>
