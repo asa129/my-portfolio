@@ -17,12 +17,12 @@ export default async function Article() {
   });
   const ogpData = await ogpRes.json();
   return (
-    <div>
+    <div className="bg-teal-100">
       {data != null &&
         data.map((article: any) => {
           console.log(article);
           return (
-            <section key={article.id} className="bg-teal-100">
+            <section key={article.id}>
               <h1>{article.title}</h1>
               <Link href={article.url} target="_blank">
                 <Image
@@ -37,11 +37,18 @@ export default async function Article() {
                   alt={article.title}
                 />
               </Link>
+              <p>likes_count:{article.likes_count}</p>
               <p>stocks_count:{article.stocks_count}</p>
               <p>{article.body.substring(0, 100).concat("．．．")}</p>
             </section>
           );
         })}
+      <button>
+        {/* <Link href="/articles">⇒MORE</Link> */}
+        <Link href="https://qiita.com/asa129" target="_blank">
+          ⇒MORE
+        </Link>
+      </button>
     </div>
   );
 }

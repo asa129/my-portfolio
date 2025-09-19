@@ -1,4 +1,3 @@
-import Image from "next/image";
 import About from "./components/about";
 import Article from "./components/article";
 
@@ -6,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <main className="flex">
-        <aside className="flex flex-col justify-center items-center w-1/2 bg-sky-500 h-screen">
+        <aside className="flex flex-col justify-center items-center w-1/2 bg-sky-500 h-auto">
           <h1>I'm XXXXXXXX XXXXXXXX</h1>
           <p>ABOUT</p>
           <p>MyArticle</p>
@@ -14,7 +13,7 @@ export default function Home() {
           <p>MyProjects</p>
           <p>MyExperience</p>
         </aside>
-        <div className="w-1/2 bg-blue-500">
+        <div className="w-1/2 bg-blue-500 h-auto">
           <About />
           <Article />
           <section>
