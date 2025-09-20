@@ -3,17 +3,19 @@ import Article from "./components/article";
 
 export default function Home() {
   return (
-    <div>
-      <main className="flex">
-        <aside className="flex flex-col justify-center items-center w-1/2 bg-sky-500 h-auto">
-          <h1>I'm XXXXXXXX XXXXXXXX</h1>
-          <p>ABOUT</p>
-          <p>MyArticle</p>
-          <p>MyActivity</p>
-          <p>MyProjects</p>
-          <p>MyExperience</p>
-        </aside>
-        <div className="w-1/2 bg-blue-500 h-auto">
+    <div className="bg-blue-950">
+      <main className="grid grid-cols-10">
+        <div className="col-span-4 h-screen sticky top-0">
+          <aside className="flex flex-col justify-center items-center h-full text-neutral-50/80">
+            <h1>I'm XXXXXXXX XXXXXXXX</h1>
+            <p>ABOUT</p>
+            <p>MyArticle</p>
+            <p>MyActivity</p>
+            <p>MyProjects</p>
+            <p>MyExperience</p>
+          </aside>
+        </div>
+        <div className="col-span-6 bg-scroll p-8 space-y-24">
           <About />
           <Article />
           <section>

@@ -2,13 +2,14 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="">
-      <h1>ABOUT</h1>
+    <section className="font-sans">
+      <h1 className="text-2xl font-bold text-primary mb-8 text-neutral-50/80">
+        ABOUT
+      </h1>
       <article>
-        <h2>title</h2>
-        <p>
+        <p className="text-sm text-neutral-50/60">
           現在、金融業界のシステム運用保守の業務に従事しています。
-          、要件を理解、改修個所の特定～修正、リリースまで行う楽しさや、エラーやバグの特定⇒解消できたときに喜びを感じています。
+          要件を理解、改修個所の特定～修正、リリースまで行う楽しさや、エラーやバグの特定⇒解消できたときに喜びを感じています。
           <br />
           一方で、日々の業務を通じて強く感じていることは、「環境や技術スタックのせい」「仕方がない」で終わらせず、運用しやすいシステムやサービスを作るにはどうしたらいいのか、開発の過程で運用しやすいシステムを作ることはできないのかという思いが生まれました。
           <br />
