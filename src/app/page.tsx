@@ -1,5 +1,8 @@
-import About from "./components/about";
-import Article from "./components/article";
+import Activity from "@/components/activity";
+import About from "../components/about";
+import Article from "../components/article";
+import { Separator } from "../components/ui/separator";
+import Project from "@/components/project";
 
 export default function Home() {
   return (
@@ -15,15 +18,14 @@ export default function Home() {
             <p>MyExperience</p>
           </aside>
         </div>
-        <div className="col-span-6 bg-scroll p-8 space-y-24">
+        <div className="col-span-6 bg-scroll p-20 space-y-24 ">
           <About />
+          <Separator />
           <Article />
-          <section>
-            <h1>MyActivity</h1>
-          </section>
-          <section>
-            <h1>MyProjects</h1>
-          </section>
+          <Separator />
+          <Project />
+          <Separator />
+          <Activity />
           <section>
             <h1>MyExperience</h1>
           </section>

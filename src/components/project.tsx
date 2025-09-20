@@ -6,7 +6,9 @@ export default function Project() {
   return (
     <div className="">
       <section>
-        <h1>Activity</h1>
+        <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">
+          My Activity
+        </h1>
         <h2>個人開発</h2>
         <div>
           <h3>お酒添加物チェッカー</h3>
