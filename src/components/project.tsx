@@ -56,7 +56,7 @@ export default function Project() {
         </Link>
         <Button
           variant="ghost"
-          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
+          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
         >
           <Link href="https://qiita.com/asa129/items/056a601746b49029c768">
             ⇒ 開発経緯や思い
@@ -66,9 +66,9 @@ export default function Project() {
         <div className="grid grid-cols-2  m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
           {/* アウトップサポートサービス */}
           <Image
-            src="/addiless-alcohol-app.png"
-            width={100}
-            height={100}
+            src="/images/gamen-example.png"
+            width={300}
+            height={300}
             alt=""
             className="rounded-lg col-span-1"
           />
@@ -82,7 +82,7 @@ export default function Project() {
         </div>
         <Button
           variant="ghost"
-          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
+          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
         >
           <Link href="">⇒ プロトタイプ</Link>
         </Button>
