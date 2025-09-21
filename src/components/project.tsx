@@ -2,16 +2,21 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../components/ui/button";
 import Link from "next/link";
+import TechStack from "./molecules/techStack";
 
 export default function Project() {
   return (
     <section id="project">
-      <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">My Project</h1>
+      <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">
+        My Projects
+      </h1>
       <div className="text-neutral-50/60">
         <p className="text-md ">
-          0⇒1で開発することに挑戦、アイデアだしからMVP作成、その後継続的に改善していくことを目指しています。
+          0⇒1で開発することに挑戦、アイデアの発案からMVP作成、その後継続的に改善していくことを目指しています。
         </p>
+        {/* メインプロジェクト */}
         <Link href="https://addiless-alcohol-app.web.app/" target="_blank">
+          {/* お酒添加物チェッカー */}
           <div className="grid grid-cols-2  m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
             <Image
               src="/images/addiless-alcohol-app.png"
@@ -25,14 +30,27 @@ export default function Project() {
                 お酒添加物チェッカー
               </h2>
               <p className="text-sm">
-                2025-05~2025-06
+                2025-05 ~ 2025-06
                 <br />
                 <br />
                 お酒に添加物が入っているか簡単にわかるアプリが欲しいと思い作成しました。
                 <br />
                 ニッチな領域で痒い所に手が届くならぬ痒い所に価値を提供できるものを目指しました。
               </p>
-              {/* ここに使用した技術をアイコンで追加する */}
+              {/* 使用技術 */}
+              <div className="flex flex-wrap gap-2 mt-4">
+                <TechStack id="react" />
+                <TechStack id="typescript" />
+                <TechStack id="tailwindcss" />
+                <TechStack id="vite" />
+                <TechStack id="supabase" />
+                <TechStack id="firebase" />
+                <TechStack id="githubactions" />
+                <TechStack id="jest" />
+                <TechStack id="reacttestinglibrary" />
+                <TechStack id="claude" />
+                <TechStack id="puppeteer" />
+              </div>
             </div>
           </div>
         </Link>
@@ -46,6 +64,7 @@ export default function Project() {
         </Button>
 
         <div className="grid grid-cols-2  m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
+          {/* アウトップサポートサービス */}
           <Image
             src="/addiless-alcohol-app.png"
             width={100}
@@ -67,6 +86,7 @@ export default function Project() {
         >
           <Link href="">⇒ プロトタイプ</Link>
         </Button>
+        {/* 学習で作ったプロジェクト */}
       </div>
     </section>
   );
