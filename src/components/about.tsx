@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="font-sans">
+    <section id="about" className="font-sans">
       <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">ABOUT</h1>
       <article>
         <p className="text-sm text-neutral-50/60">
