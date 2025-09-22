@@ -11,18 +11,17 @@ import Link from "next/link";
 export default function Home() {
   const navItems: { id: string; label: string }[] = [
     { id: "about", label: "ABOUT" },
-    { id: "article", label: "MyArticle" },
-    { id: "project", label: "MyProjects" },
-    { id: "activity", label: "MyActivity" },
-    { id: "experience", label: "MyExperience" },
+    { id: "project", label: "Projects" },
+    { id: "article", label: "Article" },
+    { id: "experience", label: "Experience" },
   ];
   return (
     <div className="bg-slate-900">
       <main className="grid grid-cols-10">
-        <div className="col-span-4 h-screen sticky top-0">
+        <div className="xl:col-span-4 lg:col-span-3 h-screen sticky top-0">
           <aside className="flex flex-col justify-center items-center h-full text-neutral-50/80">
             <Link href="/" scroll={true}>
-              <h1 className="text-5xl font-bold mb-10 ml-10">
+              <h1 className="xl:text-5xl lg:text-4xl text-3xl font-bold mb-10 ml-10">
                 I'm <span className="text-cyan-600">TAKESHITA ASAKA</span>
               </h1>
             </Link>
@@ -36,7 +35,7 @@ export default function Home() {
                     className="group grid grid-cols-2 gap-2 items-center"
                   >
                     <div className="h-px w-24 bg-neutral-50/60 transition-all duration-300 group-hover:w-34 group-hover:bg-neutral-50/90 mr-2 col-span-1 text-neutral-50/60 group-hover:text-neutral-50/90" />
-                    <p className="text-2xl text-neutral-50/60 group-hover:text-neutral-50/90 group-hover:font-bold col-span-1">
+                    <p className="xl:text-2xl lg:text-xl text-neutral-50/60 group-hover:text-neutral-50/90 group-hover:font-bold col-span-1">
                       {navItem.label}
                     </p>
                   </Link>
@@ -68,14 +67,12 @@ export default function Home() {
             </div>
           </aside>
         </div>
-        <div className="col-span-6 bg-scroll p-20 space-y-24 ">
+        <div className="xl:col-span-6 lg:col-span-7 col-span-8 bg-scroll p-20 space-y-24 ">
           <About />
-          <Separator className="my-4 bg-neutral-50/80" />
-          <Article />
           <Separator className="my-4 bg-neutral-50/80" />
           <Project />
           <Separator className="my-4 bg-neutral-50/80" />
-          <Activity />
+          <Article />
           <Separator className="my-4 bg-neutral-50/80" />
           <Experience />
         </div>

@@ -19,8 +19,10 @@ export default async function Article() {
   const ogpData = await ogpRes.json();
   return (
     <section id="article" className="m-2">
-      <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">My Article</h1>
-      <p className="text-md text-neutral-50/60">
+      <h1 className="xl:text-2xl lg:text-xl text-lg  font-bold text-neutral-50/80 mb-4">
+        My Article
+      </h1>
+      <p className="xl:text-xl text-sm text-neutral-50/80">
         日々の活動でつまづいたことや、活動を通して得た気づきなどを投稿しています。
       </p>
       <div>

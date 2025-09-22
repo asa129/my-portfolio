@@ -3,9 +3,11 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="font-sans">
-      <h1 className="text-2xl font-bold text-neutral-50/80 mb-4">ABOUT</h1>
+      <h1 className="xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
+        ABOUT
+      </h1>
       <article>
-        <p className="text-sm text-neutral-50/60">
+        <p className="lg:text-sm text-xs text-neutral-50/60">
           現在、システムエンジニアとして金融業界のシステム運用保守の業務に従事しています。
           <br />
           <br />
@@ -40,9 +42,11 @@ export default function About() {
           <br />
           私の目標は、２つあります。
           <br />
-          1.運用しやすいシステムを作れる人材になること
+          <b>1.運用しやすいシステムを作れる人材になること</b>
           <br />
-          2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
+          <b>
+            2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
+          </b>
           <br />
           <br />
           休日は、クロスバイク🚲、サウナ🍃でリフレッシュしています。
