@@ -4,12 +4,13 @@ import { Button } from "../components/ui/button";
 import Link from "next/link";
 import TechStack from "./molecules/techStack";
 import { learningProject } from "@/data/project_data";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 export default function Project() {
   return (
-    <section id="project">
-      <h1 className="xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
-        My Projects
+    <section id="project" className="">
+      <h1 className="lg:static sticky top-0 bg-slate-900/80 xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
+        My Project
       </h1>
       <div className="text-neutral-50/60">
         <p className="xl:text-md text-sm text-neutral-50/80">
@@ -18,16 +19,16 @@ export default function Project() {
         {/* メインプロジェクト */}
         <Link href="https://addiless-alcohol-app.web.app/" target="_blank">
           {/* お酒添加物チェッカー */}
-          <div className="grid lg:grid-cols-2 m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
+          <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-neutral">
             <Image
               src="/images/addiless-alcohol-app.png"
               width={300}
               height={300}
               alt=""
-              className="rounded-lg lg:col-span-1"
+              className="rounded-lg xl:col-span-1 lg:col-span-2"
             />
-            <div className="lg:col-span-1">
-              <h2 className="lg:text-xl text-md font-bold text-neutral-50/80 mb-2">
+            <div className="xl:col-span-1 lg:col-span-3 mx-2">
+              <h2 className="text-xl font-bold text-neutral-50/80 my-2">
                 お酒添加物チェッカー
               </h2>
               <p className="xl:text-md lg:text-sm text-xs">
@@ -65,18 +66,19 @@ export default function Project() {
           >
             ⇒ 開発経緯や思い
           </Link>
+          <RxOpenInNewWindow />
         </Button>
-        <div className="grid grid-cols-2  m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-neutral">
           {/* アウトップサポートサービス */}
           <Image
             src="/images/character_program_fast.png"
             width={300}
             height={300}
             alt=""
-            className="rounded-lg col-span-1"
+            className="rounded-lg xl:col-span-1 lg:col-span-2"
           />
-          <div className="col-span-1">
-            <h3 className="text-xl font-bold text-neutral-50/80 mb-2">
+          <div className="xl:col-span-1 lg:col-span-3 mx-2">
+            <h3 className="text-xl font-bold text-neutral-50/80 my-2">
               アウトップサポートサービス（開発中）
             </h3>
             <p className="text-neutral-50/60 text-sm">
@@ -115,6 +117,7 @@ export default function Project() {
           >
             ⇒ サービス考案資料
           </Link>
+          <RxOpenInNewWindow />
         </Button>
         {/* 学習で作ったプロジェクト */}
         <div className="mt-10">
@@ -125,19 +128,19 @@ export default function Project() {
             return (
               <div key={project.id}>
                 <Link href={project.url} target="_blank">
-                  <div className="grid grid-cols-2  m-4 p-2 rounded hover:bg-accent/10 hover:text-neutral">
-                    <div className="col-span-1">
+                  <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 lg:m-2 my-2 p-2 rounded hover:bg-accent/10 hover:text-neutral">
+                    <div className="xl:col-span-1 lg:col-span-2">
                       <Image
                         src={project.image}
                         width={300}
                         height={300}
                         alt={project.title}
-                        className="rounded-lg w-[300px] h-[300px] object-cover"
+                        className="rounded-lg xl:w-[300px] xl:h-[300px] w-[300px] h-[200px]  object-cover"
                       />
                     </div>
 
-                    <div className="col-span-1">
-                      <h2 className="text-xl font-bold text-neutral-50/80 mb-2">
+                    <div className="xl:col-span-1 lg:col-span-3 mx-2">
+                      <h2 className="text-xl font-bold text-neutral-50/80 my-2">
                         {project.title}
                       </h2>
                       <p className="text-sm">
@@ -159,14 +162,16 @@ export default function Project() {
                     </div>
                   </div>
                 </Link>
-                <Link href={project.qiitaUrl} target="_blank">
-                  <Button
-                    variant="ghost"
-                    className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
-                  >
+
+                <Button
+                  variant="ghost"
+                  className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
+                >
+                  <Link href={project.qiitaUrl} target="_blank">
                     ⇒ 学習時の記事
-                  </Button>
-                </Link>
+                  </Link>
+                  <RxOpenInNewWindow />
+                </Button>
               </div>
             );
           })}

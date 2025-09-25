@@ -1,6 +1,7 @@
 import React, { JSX } from "react";
 import { Badge } from "../ui/badge";
 import {
+  SiBootstrap,
   SiChakraui,
   SiCheerio,
   SiClaude,
@@ -10,9 +11,14 @@ import {
   SiGithubactions,
   SiJavascript,
   SiJest,
+  SiJquery,
+  SiLinux,
   SiNextdotjs,
+  SiOracle,
+  SiPostgresql,
   SiPuppeteer,
   SiReacthookform,
+  SiSpring,
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
@@ -20,6 +26,8 @@ import {
   SiVitest,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 const techStackItems: { id: string; icon: JSX.Element | null; name: string }[] =
   [
@@ -44,6 +52,16 @@ const techStackItems: { id: string; icon: JSX.Element | null; name: string }[] =
     { id: "daisyui", icon: <SiDaisyui />, name: "Daisy UI" },
     { id: "mycrocmsapi", icon: null, name: "MyCroCMS API" },
     { id: "qiitaapi", icon: null, name: "Qiita API" },
+    { id: "oracle", icon: <SiOracle />, name: "Oracle" },
+    { id: "postgresql", icon: <SiPostgresql />, name: "PostgreSQL" },
+    { id: "db2", icon: null, name: "DB2" },
+    { id: "java", icon: <FaJava />, name: "Java" },
+    { id: "c", icon: null, name: "C" },
+    { id: "springboot", icon: <BiLogoSpringBoot />, name: "Spring Boot" },
+    { id: "spring", icon: <SiSpring />, name: "Spring" },
+    { id: "linux", icon: <SiLinux />, name: "Linux" },
+    { id: "bootstrap", icon: <SiBootstrap />, name: "Bootstrap" },
+    { id: "jquery", icon: <SiJquery />, name: "jQuery" },
   ];
 
 export default function techStack(props: { id: string }) {
