@@ -1,9 +1,13 @@
 import SliceArticles from "@/components/molecules/sliceArticles";
+import { headers } from "next/headers";
 import React from "react";
 
 export default async function allArticle() {
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = headersList.get("x-forwarded-proto");
   // 記事取得
-  const res = await fetch("http://localhost:3000/api/qiita/allAraticles", {
+  const res = await fetch(`${protocol}://${host}/api/qiita/allAraticles`, {
     cache: "force-cache",
   });
   if (res.status !== 200) {
@@ -12,7 +16,7 @@ export default async function allArticle() {
   const data = await res.json();
 
   // ogp取得
-  const ogpRes = await fetch("http://localhost:3000/api/ogp/", {
+  const ogpRes = await fetch(`${protocol}://${host}/api/ogp`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

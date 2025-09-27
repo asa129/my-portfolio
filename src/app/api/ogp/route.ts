@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { load } from "cheerio";
+import { ArticleType } from "@/types/articleType";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
   const data = body.data;
   const ogpImageList = await Promise.all(
-    data.map(async (qiita_data: any) => {
+    data.map(async (qiita_data: ArticleType) => {
       const url = qiita_data.url;
       const res = await fetch(url, {
         headers: {

@@ -27,7 +27,7 @@ export default function Home() {
           <aside className="flex flex-col lg:justify-center lg:items-center lg:h-full md:justify-start md:items-start text-neutral-50/80">
             <Link href="/" scroll={true}>
               <h1 className="xl:text-5xl lg:text-4xl text-3xl font-bold my-10 lg:ml-10 ml-0">
-                I'm <span className="text-cyan-600">TAKESHITA ASAKA</span>
+                I&lsquo;m <span className="text-cyan-600">TAKESHITA ASAKA</span>
               </h1>
             </Link>
             <NavItems />

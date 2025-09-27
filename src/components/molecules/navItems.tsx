@@ -23,8 +23,6 @@ export default function NavItems() {
 
     if (sections.length === 0) return;
 
-    let currentActive: string | null = null;
-
     const observer = new IntersectionObserver(
       (entries) => {
         //  e.isIntersecting: 画面内に入っているか
@@ -51,37 +49,32 @@ export default function NavItems() {
   }, []);
 
   return (
-    console.log(activeId),
-    (
-      <div className="flex flex-col space-y-2 ml-0">
-        {navItems.map((navItem) => {
-          return (
-            <Link
-              key={navItem.id}
-              href={`#${navItem.id}`}
-              scroll={true}
-              className="group grid grid-cols-2 gap-2 items-center"
+    <div className="flex flex-col space-y-2 ml-0">
+      {navItems.map((navItem) => {
+        return (
+          <Link
+            key={navItem.id}
+            href={`#${navItem.id}`}
+            scroll={true}
+            className="group grid grid-cols-2 gap-2 items-center"
+          >
+            <div
+              className={`h-px w-24 ${
+                activeId === navItem.id ? "bg-cyan-600/90" : "bg-neutral-50/60"
+              } transition-all duration-300 group-hover:w-24 group-hover:bg-neutral-50/90 mr-2 col-span-1`}
+            />
+            <p
+              className={`xl:text-2xl lg:text-xl ${
+                activeId === navItem.id
+                  ? "text-cyan-600/90"
+                  : "text-neutral-50/60"
+              } group-hover:text-neutral-50/90 group-hover:font-bold col-span-1`}
             >
-              <div
-                className={`h-px w-24 ${
-                  activeId === navItem.id
-                    ? "bg-cyan-600/90"
-                    : "bg-neutral-50/60"
-                } transition-all duration-300 group-hover:w-24 group-hover:bg-neutral-50/90 mr-2 col-span-1`}
-              />
-              <p
-                className={`xl:text-2xl lg:text-xl ${
-                  activeId === navItem.id
-                    ? "text-cyan-600/90"
-                    : "text-neutral-50/60"
-                } group-hover:text-neutral-50/90 group-hover:font-bold col-span-1`}
-              >
-                {navItem.label}
-              </p>
-            </Link>
-          );
-        })}
-      </div>
-    )
+              {navItem.label}
+            </p>
+          </Link>
+        );
+      })}
+    </div>
   );
 }

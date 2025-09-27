@@ -1,3 +1,4 @@
+import { ArticleType } from "@/types/articleType";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -8,7 +9,7 @@ export async function GET() {
   ];
   const url: string = process.env.QIITA_API_URL!;
   const token: string = process.env.QIITA_API_TOKEN!;
-  const articles: any[] = [];
+  const articles: ArticleType[] = [];
   for (const id of idParas) {
     const res = await fetch(url + id, {
       headers: { Authorization: `Bearer ${token}` },

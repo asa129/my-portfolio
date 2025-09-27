@@ -3,17 +3,21 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "../components/ui/button";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { CiHeart, CiSaveDown2 } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineSaveAlt } from "react-icons/md";
+import { ArticleType } from "@/types/articleType";
+import { headers } from "next/headers";
 
 export default async function Article() {
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = headersList.get("x-forwarded-proto");
   // 記事取得
-  const res = await fetch("http://localhost:3000/api/qiita/");
+  const res = await fetch(`${protocol}://${host}/api/qiita`);
   const data = await res.json();
 
   // ogp取得
-  const ogpRes = await fetch("http://localhost:3000/api/ogp/", {
+  const ogpRes = await fetch(`${protocol}://${host}/api/ogp`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -31,7 +35,7 @@ export default async function Article() {
       </p>
       <div>
         {data != null &&
-          data.map((article: any) => {
+          data.map((article: ArticleType) => {
             return (
               <div
                 key={article.id}
@@ -79,7 +83,11 @@ export default async function Article() {
           variant="ghost"
           className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
         >
-          <Link href="/articles">⇒MORE</Link>
+          {/* <Link href="/articles" target="_blank">
+           */}
+          <Link href="https://qiita.com/asa129" target="_blank">
+            ⇒MORE
+          </Link>
           <RxOpenInNewWindow />
         </Button>
       </div>

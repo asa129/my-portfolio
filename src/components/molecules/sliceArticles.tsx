@@ -14,13 +14,14 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { ArticleType } from "@/types/articleType";
 
 export default function SliceArticles({
   ogpData,
   data,
 }: {
-  ogpData: any;
-  data: any;
+  ogpData: { id: string; ogpImage: string }[];
+  data: ArticleType[];
 }) {
   const onClickNext = () => {
     console.log(index);
@@ -56,7 +57,7 @@ export default function SliceArticles({
         </div>
         <div className="grid grid-cols-4 gap-4 flex-1 min-h-0 overflow-auto pr-2">
           {displayData != null &&
-            displayData.map((article: any) => {
+            displayData.map((article: ArticleType) => {
               return (
                 <div
                   key={article.id}
