@@ -53,7 +53,7 @@ export default async function Article() {
                     />
 
                     <div className="xl:col-span-1 lg:col-span-3 mx-2">
-                      <h2 className="text-xl font-bold text-neutral-50/80 my-2">
+                      <h2 className="text-xl font-bold text-neutral-50/80 lg:my-0 my-2">
                         {article.title}
                       </h2>
                       <p className="text-neutral-50/60 text-sm">
@@ -79,10 +79,7 @@ export default async function Article() {
           variant="ghost"
           className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
         >
-          {/* <Link href="/articles">⇒MORE</Link> */}
-          <Link href="https://qiita.com/asa129" target="_blank">
-            ⇒ MORE
-          </Link>
+          <Link href="/articles">⇒MORE</Link>
           <RxOpenInNewWindow />
         </Button>
       </div>
