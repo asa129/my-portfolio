@@ -41,11 +41,10 @@ export default function Experience() {
           {/* 使用技術 */}
           <div className="flex flex-wrap gap-2 mt-4">
             <TechStack id="java" />
-            <TechStack id="springboot" />
-            <TechStack id="postgresql" />
+            <TechStack id="c" />
+            <TechStack id="spring" />
+            <TechStack id="db2" />
             <TechStack id="oracle" />
-            <TechStack id="jquery" />
-            <TechStack id="bootstrap" />
             <TechStack id="linux" />
           </div>
         </div>

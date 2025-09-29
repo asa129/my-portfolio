@@ -21,7 +21,11 @@
       // The service should match the "name" of your worker
       "service": "my-portfolio"
     }
-  ]
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
   // "r2_buckets": [
   // Create a R2 binding with the binding name "NEXT_INC_CACHE_R2_BUCKET"
   // {

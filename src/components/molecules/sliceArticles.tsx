@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
@@ -15,16 +13,10 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { ArticleType } from "@/types/articleType";
+import { useState } from "react";
 
-export default function SliceArticles({
-  ogpData,
-  data,
-}: {
-  ogpData: { id: string; ogpImage: string }[];
-  data: ArticleType[];
-}) {
+export default function SliceArticles({ data }: { data: ArticleType[] }) {
   const onClickNext = () => {
-    console.log(index);
     if (index == 7) {
       return;
     }
@@ -46,12 +38,12 @@ export default function SliceArticles({
       <section id="article" className="m-2 flex-1 min-h-0 flex flex-col">
         <div className="flex justify-start items-center gap-4 xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
           <div className="bg-slate-800 p-2 rounded-lg">
-            <Link href={"/"}>
+            <Link href="/" prefetch={false}>
               <MdKeyboardReturn />
             </Link>
           </div>
 
-          <Link href="/articles">
+          <Link href="/articles" prefetch={false}>
             <h1 className="">My Article</h1>
           </Link>
         </div>
@@ -64,14 +56,9 @@ export default function SliceArticles({
                   className="rounded hover:bg-accent/10 hover:text-accent-foreground"
                 >
                   <Link href={article.url} target="_blank">
-                    <section className="xl:m-4 p-2 my-2">
+                    <section className="xl:m-4 p--2">
                       <Image
-                        src={
-                          ogpData.filter(
-                            (ogp: { id: string; ogpImage: string }) =>
-                              ogp.id === article.id
-                          )[0].ogpImage
-                        }
+                        src={article.ogpImage}
                         width={300}
                         height={300}
                         alt={article.title}
@@ -83,7 +70,7 @@ export default function SliceArticles({
                           {article.title}
                         </h2>
                         <p className="text-neutral-50/60 text-sm">
-                          {article.body.substring(0, 150).concat("．．．")}
+                          {article.body}
                         </p>
                         <div className="flex items-center gap-2 text-sm">
                           <div className="text-neutral-50/60 flex items-center gap-2">

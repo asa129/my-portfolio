@@ -1,29 +1,23 @@
 import SliceArticles from "@/components/molecules/sliceArticles";
-import { headers } from "next/headers";
-import React from "react";
+import { ArticleType } from "@/types/articleType";
+import { OgpData } from "@/types/ogpDataType";
+import ogpData from "@/data/ogp-data.json";
+import allArticles from "@/data/all-articles.json";
 
-export default async function allArticle() {
-  const headersList = await headers();
-  const host = headersList.get("host");
-  const protocol = headersList.get("x-forwarded-proto");
-  // 記事取得
-  const res = await fetch(`${protocol}://${host}/api/qiita/allAraticles`, {
-    cache: "force-cache",
+export default function allArticle() {
+  const articles = allArticles as unknown as ArticleType[]; // 記事データの加工
+  const processedData = articles.map((article: ArticleType) => {
+    return {
+      id: article.id,
+      title: article.title,
+      body: article.body.substring(0, 150).concat("．．．"),
+      likes_count: article.likes_count,
+      stocks_count: article.stocks_count,
+      url: article.url,
+      ogpImage: ogpData.filter((ogp: OgpData) => ogp.id === article.id)[0]
+        .ogpImage,
+    };
   });
-  if (res.status !== 200) {
-    throw new Error("Failed to fetch data");
-  }
-  const data = await res.json();
 
-  // ogp取得
-  const ogpRes = await fetch(`${protocol}://${host}/api/ogp`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ data }),
-  });
-  const ogpData = await ogpRes.json();
-
-  return <SliceArticles ogpData={ogpData} data={data} />;
+  return <SliceArticles data={processedData} />;
 }

@@ -83,9 +83,8 @@ export default async function Article() {
           variant="ghost"
           className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
         >
-          {/* <Link href="/articles" target="_blank">
-           */}
-          <Link href="https://qiita.com/asa129" target="_blank">
+          <Link href="/articles" target="_blank">
+            {/* <Link href="https://qiita.com/asa129" target="_blank"> */}
             ⇒MORE
           </Link>
           <RxOpenInNewWindow />
