@@ -9,17 +9,17 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 export default function Project() {
   return (
     <section id="project" className="">
-      <h1 className="lg:static sticky top-0 bg-slate-900/80 xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-foreground dark:text-foreground/80 mb-4">
         My Project
       </h1>
-      <div className="text-neutral-50/60">
-        <p className="xl:text-md text-sm text-neutral-50/80">
+      <div className="text-foreground dark:text-foreground/60">
+        <p className="xl:text-md text-sm text-foreground dark:text-foreground/80">
           0⇒1で開発することに挑戦、アイデアの発案からMVP作成、その後継続的に改善していくことを目指しています。
         </p>
         {/* メインプロジェクト */}
         <Link href="https://addiless-alcohol-app.web.app/" target="_blank">
           {/* お酒添加物チェッカー */}
-          <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-neutral">
+          <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
             <Image
               src="/images/addiless-alcohol-app.png"
               width={300}
@@ -28,7 +28,7 @@ export default function Project() {
               className="rounded-lg xl:col-span-1 lg:col-span-2"
             />
             <div className="xl:col-span-1 lg:col-span-3 mx-2">
-              <h2 className="text-xl font-bold text-neutral-50/80 my-2">
+              <h2 className="text-xl font-bold text-foreground dark:text-foreground/80 my-2">
                 お酒添加物チェッカー
               </h2>
               <p className="xl:text-md lg:text-sm text-xs">
@@ -58,7 +58,7 @@ export default function Project() {
         </Link>
         <Button
           variant="ghost"
-          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral"
+          className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral"
         >
           <Link
             href="https://qiita.com/asa129/items/056a601746b49029c768"
@@ -68,7 +68,7 @@ export default function Project() {
           </Link>
           <RxOpenInNewWindow />
         </Button>
-        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-neutral">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
           {/* アウトップサポートサービス */}
           <Image
             src="/images/character_program_fast.png"
@@ -78,10 +78,10 @@ export default function Project() {
             className="rounded-lg xl:col-span-1 lg:col-span-2"
           />
           <div className="xl:col-span-1 lg:col-span-3 mx-2">
-            <h3 className="text-xl font-bold text-neutral-50/80 my-2">
+            <h3 className="text-xl font-bold text-foreground dark:text-foreground/80 my-2">
               アウトップサポートサービス（開発中）
             </h3>
-            <p className="text-neutral-50/60 text-sm">
+            <p className="text-foreground dark:text-foreground/60 text-sm">
               2025-09 ~
               <br />
               <br />
@@ -109,7 +109,7 @@ export default function Project() {
         </div>
         <Button
           variant="ghost"
-          className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
+          className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
         >
           <Link
             href="https://www.notion.so/OutputFirst-25b56d8768b980ae9feceb3c87d8e275?source=copy_link"
@@ -121,14 +121,14 @@ export default function Project() {
         </Button>
         {/* 学習で作ったプロジェクト */}
         <div className="mt-10">
-          <p className="text-md text-neutral-50/80">
+          <p className="text-md text-foreground dark:text-foreground/80">
             ReactやNext.js、CI/CDの構築、DB設計、導入など、開発するために必要なことをプロダクトづくりを通して習得しました。
           </p>
           {learningProject.map((project) => {
             return (
               <div key={project.id}>
                 <Link href={project.url} target="_blank">
-                  <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 lg:m-2 my-2 p-2 rounded hover:bg-accent/10 hover:text-neutral">
+                  <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 lg:m-2 my-2 p-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
                     <div className="xl:col-span-1 lg:col-span-2">
                       <Image
                         src={project.image}
@@ -140,7 +140,7 @@ export default function Project() {
                     </div>
 
                     <div className="xl:col-span-1 lg:col-span-3 mx-2">
-                      <h2 className="text-xl font-bold text-neutral-50/80 my-2">
+                      <h2 className="text-xl font-bold text-foreground dark:text-foreground/80 my-2">
                         {project.title}
                       </h2>
                       <p className="text-sm">
@@ -165,7 +165,7 @@ export default function Project() {
 
                 <Button
                   variant="ghost"
-                  className="text-neutral-50/60 hover:bg-accent/10 hover:text-neutral flex justify-end"
+                  className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
                 >
                   <Link href={project.qiitaUrl} target="_blank">
                     ⇒ 学習時の記事

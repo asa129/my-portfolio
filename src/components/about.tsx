@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
   return (
     <section id="about" className="font-sans">
-      <h1 className="lg:static sticky top-0 bg-slate-900/80 xl:text-2xl lg:text-xl text-lg font-bold text-neutral-50/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-foreground/80 mb-4">
         ABOUT
       </h1>
       <article>
-        <p className="lg:text-sm text-xs text-neutral-50/60">
+        <p className="lg:text-sm text-xs text-foreground dark:text-foreground/60">
           現在、システムエンジニアとして金融業界のシステム運用保守の業務に従事しています。
           <br />
           <br />
@@ -59,6 +60,10 @@ export default function About() {
           詳しい活動は、MyArticleやMyProjectsをご覧ください。
         </p>
       </article>
+      <Link href="/articles" target="_blank">
+        {/* <Link href="https://qiita.com/asa129" target="_blank"> */}
+        ⇒MORE
+      </Link>
     </section>
   );
 }

@@ -4,24 +4,26 @@ import TechStack from "./molecules/techStack";
 export default function Experience() {
   return (
     <section id="experience">
-      <h1 className="lg:static sticky top-0 bg-slate-900/80 xl:text-2xl text-xl font-bold text-neutral-50/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl text-xl font-bold text-foreground/80 mb-4">
         My Experience
       </h1>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-accent/10 hover:text-accent-foreground my-4 p-2">
-        <div className="text-sm text-neutral-50/50 xl:col-span-1 lg:col-span-2">
-          <h2 className="text-xl font-semibold text-neutral-50/80">銀行業界</h2>
-          <h3 className="text-xl font-semibold text-neutral-50/80 mr-2">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+        <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
+          <h2 className="text-xl font-semibold text-foreground/80">銀行業界</h2>
+          <h3 className="text-xl font-semibold text-foreground/80 mr-2">
             インターネットバンキング、コールセンターオペレーター向けシステム保守
           </h3>
-          <span className="text-sm text-neutral-50/50">
+          <span className="text-sm text-foreground/50">
             2020年8月 - 2021年3月
           </span>
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
           <div className="flex justify-between items-start mb-3">
             <div>
-              <p className="text-md text-neutral-50/60">業務経験</p>
-              <p className="text-sm text-neutral-50/60 mt-1">
+              <p className="text-md text-foreground dark:text-foreground/60">
+                業務経験
+              </p>
+              <p className="text-sm text-foreground dark:text-foreground/60 mt-1">
                 エンドユーザー、行員様向けインターネットバンキングシステムを担当
                 <br />
                 コールセンターオペレーター向けシステムを担当
@@ -49,21 +51,23 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-accent-foreground my-4 p-2">
-        <div className="text-sm text-neutral-50/50 xl:col-span-1 lg:col-span-2">
-          <h2 className="text-xl font-semibold text-neutral-50/80">保険業界</h2>
-          <h3 className="text-xl font-semibold text-neutral-50/80">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+        <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
+          <h2 className="text-xl font-semibold text-foreground/80">保険業界</h2>
+          <h3 className="text-xl font-semibold text-foreground/80">
             新規申込サイト、顧客管理システム保守
           </h3>
-          <span className="text-sm text-neutral-50/50">
+          <span className="text-sm text-foreground/50">
             2020年8月 - 2021年3月
           </span>
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
           <div className="flex justify-between items-start mb-3">
             <div>
-              <p className="text-md text-neutral-50/60">業務経験</p>
-              <p className="text-sm text-neutral-50/60 mt-1">
+              <p className="text-md text-foreground dark:text-foreground/60">
+                業務経験
+              </p>
+              <p className="text-sm text-foreground dark:text-foreground/60 mt-1">
                 ネット保険の新規申込サイト、マイページサイト、顧客管理システムを担当
                 <br />
                 ・お客さまの要望に基づき改修個所の調査、工数見積り
@@ -86,16 +90,18 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-accent/10 hover:text-accent-foreground my-4 p-2">
-        <div className="text-sm text-neutral-50/50 xl:col-span-1 lg:col-span-2">
-          <h2 className="text-xl font-semibold text-neutral-50/80">研修期間</h2>
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+        <div className="text-sm text-foreground dark:text-foreground/50 xl:col-span-1 lg:col-span-2">
+          <h2 className="text-xl font-semibold text-foreground/80">研修期間</h2>
           2020年8月 - 2021年3月
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
           <div className="flex justify-between items-start mb-3">
             <div>
-              <p className="text-md text-neutral-50/60">業務経験</p>
-              <p className="text-sm text-neutral-50/60 mt-1">
+              <p className="text-md text-foreground dark:text-foreground/60">
+                業務経験
+              </p>
+              <p className="text-sm text-foreground dark:text-foreground/60 mt-1">
                 Javaを中心に受講
               </p>
             </div>

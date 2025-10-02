@@ -9,51 +9,51 @@ export const learningProject: {
   url: string;
   qiitaUrl: string;
 }[] = [
-  {
-    id: "study-record",
-    title: "学習記録アプリ",
-    description: `学習内容を記録して、学習内容を振り返ることができます。\r
-    Reactとjavascriptを用いTODOアプリを作成しました。
-    \r supabaseを用いてデータの保存、jestとreacttestinglibraryを用いてテストを行いました。
-    \r firebaseでデプロイ、githubactionsでCI/CDの構築を行いました。`,
-    startDate: "2025-02",
-    endDate: "2025-03",
-    techStack: [
-      "react",
-      "javascript",
-      "vite",
-      "supabase",
-      "jest",
-      "reacttestinglibrary",
-      "firebase",
-    ],
-    image: "/images/study-record.png",
-    url: "https://github.com/asa129/study-record",
-    qiitaUrl: "https://qiita.com/asa129/items/189a526901c06f756178",
-  },
-  {
-    id: "new-study-record",
-    title: "新・学習記録アプリ",
-    description: `学習内容を記録して、学習内容を振り返ることができます。
-    \rTypeScriptとReactを用いTODOアプリを作成しました。
-    \rChakraUIを用い、ドキュメント見ながら必要なコンポネーントを組み合わせてUIを作成しました。`,
-    startDate: "2025-04",
-    endDate: "2025-04",
-    techStack: [
-      "react",
-      "typescript",
-      "supabase",
-      "jest",
-      "vite",
-      "reacttestinglibrary",
-      "chakraui",
-      "reacthookform",
-      "githubactions",
-    ],
-    image: "/images/new-study-record.png",
-    url: "https://github.com/asa129/new-study-record",
-    qiitaUrl: "https://qiita.com/asa129/items/73cbf320dfcf52cc2690",
-  },
+  // {
+  //   id: "study-record",
+  //   title: "学習記録アプリ",
+  //   description: `学習内容を記録して、学習内容を振り返ることができます。\r
+  //   Reactとjavascriptを用いTODOアプリを作成しました。
+  //   \r supabaseを用いてデータの保存、jestとreacttestinglibraryを用いてテストを行いました。
+  //   \r firebaseでデプロイ、githubactionsでCI/CDの構築を行いました。`,
+  //   startDate: "2025-02",
+  //   endDate: "2025-03",
+  //   techStack: [
+  //     "react",
+  //     "javascript",
+  //     "vite",
+  //     "supabase",
+  //     "jest",
+  //     "reacttestinglibrary",
+  //     "firebase",
+  //   ],
+  //   image: "/images/study-record.png",
+  //   url: "https://github.com/asa129/study-record",
+  //   qiitaUrl: "https://qiita.com/asa129/items/189a526901c06f756178",
+  // },
+  // {
+  //   id: "new-study-record",
+  //   title: "新・学習記録アプリ",
+  //   description: `学習内容を記録して、学習内容を振り返ることができます。
+  //   \rTypeScriptとReactを用いTODOアプリを作成しました。
+  //   \rChakraUIを用い、ドキュメント見ながら必要なコンポネーントを組み合わせてUIを作成しました。`,
+  //   startDate: "2025-04",
+  //   endDate: "2025-04",
+  //   techStack: [
+  //     "react",
+  //     "typescript",
+  //     "supabase",
+  //     "jest",
+  //     "vite",
+  //     "reacttestinglibrary",
+  //     "chakraui",
+  //     "reacthookform",
+  //     "githubactions",
+  //   ],
+  //   image: "/images/new-study-record.png",
+  //   url: "https://github.com/asa129/new-study-record",
+  //   qiitaUrl: "https://qiita.com/asa129/items/73cbf320dfcf52cc2690",
+  // },
   {
     id: "business-card-app",
     title: "名刺管理アプリ",
