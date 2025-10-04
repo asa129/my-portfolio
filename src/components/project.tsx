@@ -17,7 +17,7 @@ export default function Project() {
           0⇒1で開発することに挑戦、アイデアの発案からMVP作成、その後継続的に改善していくことを目指しています。
         </p>
         {/* メインプロジェクト */}
-        <Link href="https://addiless-alcohol-app.web.app/" target="_blank">
+        <Link href="/projects/osake">
           {/* お酒添加物チェッカー */}
           <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
             <Image
@@ -56,18 +56,7 @@ export default function Project() {
             </div>
           </div>
         </Link>
-        <Button
-          variant="ghost"
-          className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral"
-        >
-          <Link
-            href="https://qiita.com/asa129/items/056a601746b49029c768"
-            target="_blank"
-          >
-            ⇒ 開発経緯や思い
-          </Link>
-          <RxOpenInNewWindow />
-        </Button>
+
         <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
           {/* アウトップサポートサービス */}
           <Image

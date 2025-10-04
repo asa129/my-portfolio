@@ -64,11 +64,11 @@ export default function Home() {
         </div>
         <div className="lg:col-span-6 col-span-8 lg:bg-scroll lg:p-20 p-10 space-y-12 ">
           <About />
-          <Separator className="my-4 bg-foreground/80" />
+          <Separator className="my-4 bg-sidebar-foreground/80" />
           <Project />
-          <Separator className="my-4 bg-foreground/80" />
+          <Separator className="my-4 bg-sidebar-foreground/80" />
           <Article />
-          <Separator className="my-4 bg-foreground/80" />
+          <Separator className="my-4 bg-sidebar-foreground/80" />
           <Experience />
         </div>
         <Link href="/" scroll={true}>

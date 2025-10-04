@@ -1,0 +1,72 @@
+import Link from "next/link";
+import React from "react";
+import { MdKeyboardReturn } from "react-icons/md";
+
+export default function page() {
+  return (
+    <div className="min-h-screen bg-background">
+      <div className="mx-auto max-w-4xl px-6 py-12">
+        <div className="bg-gradient-to-br from-background to-white/30 dark:to-white/10 p-2 rounded-lg">
+          <Link href="/" prefetch={false} className="flex items-center gap-2">
+            <MdKeyboardReturn />
+            Back to Home
+          </Link>
+        </div>
+        <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-cyan-600 mb-4">
+          ABOUT
+        </h1>
+        <p className="lg:text-sm text-xs text-foreground dark:text-foreground/60">
+          現在、システムエンジニアとして金融業界のシステム運用保守の業務に従事しています。
+          <br />
+          <br />
+          要件理解・工数見積り、改修個所の調査～修正、リリースまでの一連の流れに携わりました。
+          <br />
+          エラーやバグなどの問題個所の特定⇒解決までのプロセスを考える⇒課題解消ができたときや、
+          <br />
+          お客さまの要望を満たし、無事にリリースできたときに喜びを感じています。
+          <br />
+          <br />
+          一方で、日々の業務を通じて強く感じていることは、
+          <br />
+          生じる課題や問題に対して、
+          <b>「環境や技術スタックのせい」「仕方がない」</b>
+          で終わらせず、どうすれば運用しやすいシステムやサービスを作ることができるのかということでした。
+          <br />
+          開発の過程で運用しやすいシステムを作ることはできないのかという思いが生まれました。
+          <br />
+          <br />
+          開発とはどのようにするのか、0→1で生み出すにはどうすればいいのかわからなかったため、
+          <br />
+          コミュニティに入会し、個人開発やアウトプット活動を日々行っています。
+          <br />
+          <br />
+          コミュニティ活動を通じて、<b>React</b>や<b>Next.js</b>
+          の習得、<b>公式ドキュメントを読むこと</b>の習得、
+          <b>GithubActionsやCloudflareでのCI/CDパイプライン の構築</b>
+          の習得を行いました。
+          <br />
+          日々の個人開発やアウトプット活動を通じて、0から価値を生み出す力や、新しい技術のキャッチアップと使いこなす力を磨いています。
+          <br />
+          <br />
+          私の目標は、２つあります。
+          <br />
+          <b>1.運用しやすいシステムを作れる人材になること</b>
+          <br />
+          <b>
+            2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
+          </b>
+          <br />
+          <br />
+          休日は、クロスバイク🚲、サウナ🍃でリフレッシュしています。
+          <br />
+          好きなことは猫🐱を眺めることです。
+          <br />
+          最近、自作キーボード作りの沼に足を踏み入れました。⌨
+          <br />
+          <br />
+          詳しい活動は、MyArticleやMyProjectsをご覧ください。
+        </p>
+      </div>
+    </div>
+  );
+}
