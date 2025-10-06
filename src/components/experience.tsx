@@ -7,7 +7,7 @@ export default function Experience() {
       <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl text-xl font-bold text-foreground/80 mb-4">
         My Experience
       </h1>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
         <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
           <h2 className="text-xl font-semibold text-foreground/80">銀行業界</h2>
           <h3 className="text-xl font-semibold text-foreground/80 mr-2">
@@ -51,7 +51,7 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
         <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
           <h2 className="text-xl font-semibold text-foreground/80">保険業界</h2>
           <h3 className="text-xl font-semibold text-foreground/80">
@@ -90,7 +90,7 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
         <div className="text-sm text-foreground dark:text-foreground/50 xl:col-span-1 lg:col-span-2">
           <h2 className="text-xl font-semibold text-foreground/80">研修期間</h2>
           2020年8月 - 2021年3月

@@ -35,7 +35,7 @@ export default function SliceArticles({ data }: { data: ArticleType[] }) {
   const [index, setIndex] = useState(0);
   const displayData = data.slice(index * 8, (index + 1) * 8);
   return (
-    <div className="bg-gradient-to-br from-background to-white/30 dark:to-white/10 h-screen min-h-screen overflow-hidden flex flex-col">
+    <div className="bg-gradient-to-br from-background via-blue-50/30 to-white/30 dark:via-blue-50/10 dark:to-white/10 h-screen min-h-screen overflow-hidden flex flex-col">
       <section id="article" className="m-2 flex-1 min-h-0 flex flex-col">
         <div className="flex justify-start items-center gap-4 xl:text-2xl lg:text-xl text-lg font-bold text-foreground dark:text-foreground/80 mb-4">
           <div className="bg-gradient-to-br from-background to-white/30 dark:to-white/10 p-2 rounded-lg">
@@ -54,10 +54,10 @@ export default function SliceArticles({ data }: { data: ArticleType[] }) {
               return (
                 <div
                   key={article.id}
-                  className="rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
+                  className="rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
                 >
                   <Link href={article.url} target="_blank">
-                    <section className="xl:m-4 p--2">
+                    <section className="xl:m-4 p-2">
                       <Image
                         src={article.ogpImage}
                         width={300}
@@ -66,7 +66,7 @@ export default function SliceArticles({ data }: { data: ArticleType[] }) {
                         className="rounded-lg"
                       />
 
-                      <div className="mx-2">
+                      <div className="mx-2 text-wrap">
                         <h2 className="font-bold text-foreground dark:text-foreground/80 my-2">
                           {article.title}
                         </h2>

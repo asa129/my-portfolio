@@ -10,7 +10,7 @@ export default function allArticle() {
     return {
       id: article.id,
       title: article.title,
-      body: article.body.substring(0, 150).concat("．．．"),
+      body: article.body.substring(0, 150).concat("..."),
       likes_count: article.likes_count,
       stocks_count: article.stocks_count,
       url: article.url,
