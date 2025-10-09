@@ -13,9 +13,7 @@ export default function Experience() {
           <h3 className="text-xl font-semibold text-foreground/80 mr-2">
             インターネットバンキング、コールセンターオペレーター向けシステム保守
           </h3>
-          <span className="text-sm text-foreground/50">
-            2020年8月 - 2021年3月
-          </span>
+          <span className="text-sm text-foreground/50">2024年4月 -</span>
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
           <div className="flex justify-between items-start mb-3">
@@ -58,7 +56,7 @@ export default function Experience() {
             新規申込サイト、顧客管理システム保守
           </h3>
           <span className="text-sm text-foreground/50">
-            2020年8月 - 2021年3月
+            2021年4月 - 2024年3月
           </span>
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
