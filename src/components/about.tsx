@@ -75,7 +75,7 @@ export default function About() {
       <br />
       <Button
         variant="ghost"
-        className="text-foreground/60 hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral"
+        className="text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral"
       >
         <Link href="/about">
           {/* <Link href="https://qiita.com/asa129" target="_blank"> */}

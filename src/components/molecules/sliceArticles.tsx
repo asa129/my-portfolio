@@ -54,7 +54,7 @@ export default function SliceArticles({ data }: { data: ArticleType[] }) {
               return (
                 <div
                   key={article.id}
-                  className="rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
+                  className="rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
                 >
                   <Link href={article.url} target="_blank">
                     <section className="xl:m-4 p-2">

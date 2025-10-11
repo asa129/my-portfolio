@@ -24,7 +24,7 @@ export default function Article() {
             return (
               <div
                 key={article.id}
-                className="rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
+                className="rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground"
               >
                 <Link href={article.url} target="_blank">
                   <section className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2">
@@ -61,7 +61,7 @@ export default function Article() {
           })}
         <Button
           variant="ghost"
-          className="text-foreground/60 hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral"
+          className="text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral"
         >
           <Link href="/articles" target="_blank">
             {/* <Link href="https://qiita.com/asa129" target="_blank"> */}

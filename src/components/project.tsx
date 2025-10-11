@@ -19,7 +19,7 @@ export default function Project() {
         {/* メインプロジェクト */}
         <Link href="/projects/osake">
           {/* お酒添加物チェッカー */}
-          <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral">
+          <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
             <Image
               src="/images/addiless-alcohol-app.png"
               width={300}
@@ -57,7 +57,7 @@ export default function Project() {
           </div>
         </Link>
 
-        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
           {/* アウトップサポートサービス */}
           <Image
             src="/images/character_program_fast.png"
@@ -98,7 +98,7 @@ export default function Project() {
         </div>
         <Button
           variant="ghost"
-          className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
+          className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
         >
           <Link
             href="https://www.notion.so/OutputFirst-25b56d8768b980ae9feceb3c87d8e275?source=copy_link"
@@ -117,7 +117,7 @@ export default function Project() {
             return (
               <div key={project.id}>
                 <Link href={project.url} target="_blank">
-                  <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 lg:m-2 my-2 p-2 rounded hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral">
+                  <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 lg:m-2 my-2 p-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
                     <div className="xl:col-span-1 lg:col-span-2">
                       <Image
                         src={project.image}
@@ -154,7 +154,7 @@ export default function Project() {
 
                 <Button
                   variant="ghost"
-                  className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/60 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
+                  className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
                 >
                   <Link href={project.qiitaUrl} target="_blank">
                     ⇒ 学習時の記事
