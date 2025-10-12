@@ -16,6 +16,7 @@ export default function allArticle() {
       url: article.url,
       ogpImage: ogpData.filter((ogp: OgpData) => ogp.id === article.id)[0]
         .ogpImage,
+      comment: article.comment,
     };
   });
 

@@ -233,7 +233,7 @@ export default function page() {
           </h2>
           <div className="space-y-4 rounded-lg border border-border bg-card p-6">
             <div>
-              <h3 className="mb-2 text-sm font-medium text-foreground mt-2">
+              <h3 className="mb-2 text-sm font-medium mt-2">
                 使ってもらえるものを作ることの難しさ
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground ml-2">
@@ -241,11 +241,14 @@ export default function page() {
                 <br />
                 しかし、実際に使ってもらえているかというと使ってもらえないものを作ってしまったと考えています。
                 <br />
-                対象がニッチだったことや、ユーザーや世の中の人何を課題に感じていてそれ解決するためにはどうしたらいいのか、
+                対象がニッチであり、私自身が作りたかったものだったこと。
+                <b>
+                  ユーザーや世の中の人が何を課題に感じて、解決するためにはどうしたらいいのかの観点がなかったです。
+                </b>
                 <br />
-                自分の課題を解決するためではなく、まだ解決できていないものでプロダクトを作ることはできないかを意識して、新しいサービスを開発することを決めました。
+                自分の課題を解決するためではなく、ターゲット対象をより具象化することを意識して、新しいサービスを開発することに決めました。
               </p>
-              <h3 className="mb-2 text-sm font-medium text-foreground mt-2">
+              <h3 className="mb-2 text-sm font-medium mt-2">
                 スクレイピングの課題
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
@@ -259,7 +262,7 @@ export default function page() {
                 <br />
                 効率的にデータを集め、登録できる方法がもっとあったのではないか、APIがなければ自分で作れないかとも考えています。
               </p>
-              <h3 className="mb-2 text-sm font-medium text-foreground mt-2">
+              <h3 className="mb-2 text-sm font-medium mt-2">
                 データの取集、画像などの著作権問題
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">

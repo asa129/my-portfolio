@@ -12,7 +12,7 @@ export default function Article() {
   const articles = pickUpArticles as unknown as ArticleType[];
   return (
     <section id="article" className="m-2">
-      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-foreground/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-cyan-600 dark:text-foreground/80  mb-4">
         My Article
       </h1>
       <p className="xl:text-xl text-sm text-foreground/80">
@@ -40,6 +40,9 @@ export default function Article() {
                       <h2 className="text-xl font-bold text-foreground/80 lg:my-0 my-2">
                         {article.title}
                       </h2>
+                      <p className="text-foreground font-bold dark:text-foreground/60 text-sm mb-2">
+                        {article.comment}
+                      </p>
                       <p className="text-foreground dark:text-foreground/60 text-sm">
                         {article.body}
                       </p>

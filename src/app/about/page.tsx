@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { GoMoveToTop } from "react-icons/go";
 import { MdKeyboardReturn } from "react-icons/md";
@@ -10,53 +9,48 @@ export default function page() {
   return (
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-4xl px-6 py-12">
-        <div className="bg-gradient-to-br from-background via-blue-50/30 to-white/30 dark:via-blue-50/10 dark:to-white/10">
+        <div className="mb-8 bg-gradient-to-br from-background via-blue-50/30 to-white/30 dark:via-blue-50/10 dark:to-white/10">
           <Link href="/" prefetch={false} className="flex items-center gap-2">
             <MdKeyboardReturn />
             Back to Home
           </Link>
         </div>
-        <header className="mb-16 border-b border-border">
-          <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 lg:text-4xl text-lg text-cyan-600 my-2">
+        <header className="mb-12 border-b border-border pb-6">
+          <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 lg:text-4xl text-2xl text-cyan-600 mb-3">
             竹下 朝香
           </h1>
-          <h2 className="mb-2 text-lg">Takeshita Asaka</h2>
-          <div className="flex gap-10 text-2xl mb-4">
-            <p className="flex justify-center gap-2 text-foreground dark:text-foreground/60 mb-2">
-              <Link
-                href="https://qiita.com/asa129"
-                target="_blank"
-                className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90"
-              >
-                <SiQiita />
-              </Link>
-            </p>
-            <p className="flex items-center gap-2 text-lg text-foreground dark:text-foreground/60 mb-2">
-              <Link
-                href="https://x.com/jad1290"
-                target="_blank"
-                className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90"
-              >
-                <FaXTwitter />
-              </Link>
-            </p>
-            <p className="flex items-center gap-2 text-lg text-foreground dark:text-foreground/60 mb-2">
-              <Link
-                href="https://github.com/asa129"
-                target="_blank"
-                className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90"
-              >
-                <FaGithub />
-              </Link>
-            </p>
+          <h2 className="mb-4 text-xl">Takeshita Asaka</h2>
+          <div className="flex gap-6 text-2xl">
+            <Link
+              href="https://qiita.com/asa129"
+              target="_blank"
+              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+            >
+              <SiQiita />
+            </Link>
+            <Link
+              href="https://x.com/jad1290"
+              target="_blank"
+              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+            >
+              <FaXTwitter />
+            </Link>
+            <Link
+              href="https://github.com/asa129"
+              target="_blank"
+              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+            >
+              <FaGithub />
+            </Link>
           </div>
         </header>
+
         <section className="mb-12">
           <h2 className="mb-6 text-2xl tracking-tight">
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             現在の仕事
           </h2>
-          <p className="text-foreground">
+          <p className="text-foreground leading-relaxed">
             システムエンジニアとして金融業界システムの運用保守業務に従事しています。
             <br />
             <br />
@@ -68,50 +62,42 @@ export default function page() {
           </p>
         </section>
 
-        <section className="mb-12 grid md:grid-cols-2 gap-12 items-center">
+        <section className="mb-12 grid md:grid-cols-2 gap-8 items-center">
           <div className="hidden md:block">
             <Image
               src="/images/my-chart.png"
               width={400}
               height={300}
               alt="my-chart"
-              className="mx-auto"
+              className="mx-auto mb-3"
             />
-            <p>現在のスキルと1年後の目標を可視化しました</p>
+            <p className="text-sm text-center text-foreground/80">
+              現状と1年後の目標を可視化しました
+            </p>
           </div>
           <div>
-            <h2 className="mb-6 text-2xl  tracking-tight text-foreground">
+            <h2 className="mb-6 text-2xl tracking-tight text-foreground">
               <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
               感じている課題
             </h2>
-            <p>
+            <p className="leading-relaxed">
               業務を通して生じる課題や問題に対して、
               <b>「環境や技術スタックのせい」「仕方がない」</b>
               で終わらせず、どうすれば運用しやすいシステムやサービスを作ることができるのかということです。
               <br />
               <br />
-              開発の段階で運用しやすいシステムを作ることはできないのか？と考えるようになり、開発に興味を持つようになりました。
-              <br />
-              {/* <br />
-            複雑なアーキテクトや、ロジックに出会ったときに、これは障害につながるのでは？と思うことも多くありました。
-            <br />
-            誰が見ても理解のしやすいロジックや仕組みをつくり、そのうえでユーザーのニーズに合わせてよりよいものを作れるようになりたい。
-            <br />
-            その反面、自分の知識や経験がないから解決できない、悔しい気持ちがありました。 */}
-              {/* 運用中もお客様ユーザーのニーズに合わせてシステムを改善するにあたり、複雑なアーキテクトや逆に障害につながるのではと思うロジックに出会った際に
-            もっとよりよくするにはどうしたらいいのだろう、自分の技術力を上げれば解決するのか、もっと知見が欲しい、反映した後のユーザーのフィードバックをちょく
-            より直接的にもらいたいという思いも強くなりました。 */}
+              開発の段階で運用しやすいシステムを作ることはできないのか?と考えるようになり、開発に興味を持つようになりました。
             </p>
           </div>
         </section>
 
-        <section className="mb-12 grid md:grid-cols-2 gap-12 items-center">
+        <section className="mb-12 grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="mb-6 text-2xl  tracking-tight text-foreground">
+            <h2 className="mb-6 text-2xl tracking-tight text-foreground">
               <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
               取り組んでいること
             </h2>
-            <p>
+            <p className="leading-relaxed">
               開発とはどのようにするのか、0→1で生み出すにはどうすればいいのかわからなかったため、
               <br />
               コミュニティに入会し、個人開発やアウトプット活動を日々行っています。
@@ -125,36 +111,50 @@ export default function page() {
               日々の個人開発やアウトプット活動を通じて、0から価値を生み出す力や、新しい技術のキャッチアップと使いこなす力を磨いています。
             </p>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block space-y-4">
             <Image
               src="/images/hackathon1.png"
               width={400}
               height={300}
               alt="my-chart"
-              className="mx-auto ml-24 mb-4 rounded-lg"
+              className="mx-auto rounded-lg mr-24"
             />
             <Image
               src="/images/hackathon2.png"
               width={400}
               height={300}
               alt="my-chart"
-              className="mx-auto mr-24 rounded-lg"
+              className="mx-auto rounded-lg ml-24"
             />
-            <p>3時間ハッカソンイベントに参加した時の様子</p>
+            <p className="text-sm text-center text-foreground/80">
+              3時間ハッカソンイベントに参加した時の様子
+            </p>
           </div>
         </section>
+
         <section className="mb-12">
-          <h2 className="mb-2 text-2xl tracking-tight text-foreground">
+          <h2 className="mb-6 text-2xl tracking-tight text-foreground">
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             周りから言われること
           </h2>
-          <p>
-            「丁寧で真面目」「優しい」と言われます。その一方で、「意外と頑固で負けず嫌い」とも言われます。
+          <p className="leading-relaxed">
+            <b>同期からもらった評価</b>
             <br />
-            もっと良くできると思ったことには、粘り強く取り組む性格だからかもしれません。
+            <span className="inline-block w-0.5 h-8 bg-cyan-600 rounded-full mr-3 ml-3 my-2 align-middle" />
+            「控えめだけど意外と頑固さもある骨太女子」「繊細だけども意外とタフ」
+            <br />
+            意見と批判を区別して理解することを意識しています。
+            <br />
+            もっと良くできると思ったことには、粘り強く取り組みます。
             <br />
             <br />
+            <b>上司からいただいた評価</b>
+            <br />
+            「丁寧で真面目」「思ったより頑固で負けず嫌い」
+            <br />
+            <span className="inline-block w-0.5 h-8 bg-cyan-600 rounded-full mr-3 ml-3 my-2 align-middle" />
             「女性は受け身で前に出ない人が多いと思ってたけど、あなたはちゃんと言ってくれるから助かる」
+            <br />
             と言っていただいたことがあります。
             <br />
             疑問に思ったことや改善提案は、遠慮せずに発言するようにしています。
@@ -166,10 +166,10 @@ export default function page() {
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             組織の中で大切にしていること、実践していること
           </h2>
-          <h3 className="mb-2 text-xl tracking-tight text-foreground">
+          <h3 className="mb-4 text-lg tracking-tight text-foreground font-semibold">
             実践していること
           </h3>
-          <p className="mb-2 space-y-2">
+          <p className="mb-6 leading-relaxed">
             <b>「次に担当する人が困らない」</b>
             を意識して業務に携わっています。
             <br />
@@ -184,46 +184,52 @@ export default function page() {
             <br />
             その経験から、安心して相談でき、否定から始まらない環境を作りたいと考えています。
           </p>
-          <h3 className="my-2 text-xl  tracking-tight text-foreground">
+          <h3 className="mb-4 text-lg tracking-tight text-foreground font-semibold">
             目指していること
           </h3>
-          <p>
+          <p className="leading-relaxed">
             思いやりがあり、環境や制約の中でも最善の解決策を見出すチーム。
             <br />
             誰かのせいにせず、失敗を許容し、何事にも挑戦できる文化を大切にしたいです。
           </p>
         </section>
+
         <section className="mb-12">
-          <h2 className="mb-6 text-2xl  tracking-tight text-foreground">
+          <h2 className="mb-6 text-2xl tracking-tight text-foreground">
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             今後どうしていきたいか
           </h2>
-          <p>
-            私の目標は、２つあります。
+          <p className="mb-4 leading-relaxed text-lg">
+            私の目標は、2つあります。
+          </p>
+          <h3 className="mb-2 text-lg tracking-tight text-foreground font-semibold">
+            1.運用しやすいシステムを作れる人材になること
+          </h3>
+          <p className="mb-4 leading-relaxed">
+            「作って終わり」ではなく、使い続けてもらえるものを作れる人になりたいと思っています。
             <br />
-            <b>1.運用しやすいシステムを作れる人材になること</b>
-            <br />
-            作って終わり、ではなく使い続けてもらえるものを作れる人になりたいと思っています。
             運用が容易にできてかつ、そこからよりよいものをつくってもらえるにはどうしたらいいか、
-            保守しやすいシステムとはどのように作れることができるのか、を学び、使う人、提供したい人、メンテナンスする人全ての人が容易により良いものを作れる仕組みづくりを習得したいです。
-            <br />
-            <b>
-              2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
-            </b>
-            <br />
+            保守しやすいシステムとはどのように作れることができるのかを学び、「使う人」「提供したい人」「メンテナンスする人」全ての人がより良いものを作れる仕組みづくりを習得したいです。
+          </p>
+          <h3 className="mb-2 text-lg tracking-tight text-foreground font-semibold">
+            2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
+          </h3>
+          <p className="mb-4 leading-relaxed">
             私自身、大学を2度中退し、働くことに絶望していた時期がありました。
+            <br />
             しかし、リモートワークとITに出会い、「体調や環境に制約があっても働ける」という選択肢があることを知りました。
-            同じように悩んでいる人に、選択肢があることを伝えたい絶望しないでほしい。
-            そして、同じように悩む人たちが活躍できる環境を増やすために、開発者としてサービスや仕組みを作りたいと考えています。
+            同じように悩んでいる人に、選択肢があることを伝えたい。絶望しないで欲しい。
+            <br />
+            そして、
+            活躍できる環境を増やすために開発者としてサービスや仕組みを作りたいと考えています。
           </p>
-          <p className="underline underline-offset2 text-cyan-600 ">
-            <Link
-              href="https://qiita.com/asa129/items/fad180b79a9bc68e978a"
-              target="_blank"
-            >
-              お腹の症状で大学を2度中退した私が、ITとリモートワークに救われた話
-            </Link>
-          </p>
+          <Link
+            href="https://qiita.com/asa129/items/fad180b79a9bc68e978a"
+            target="_blank"
+            className="inline-block text-cyan-600 underline underline-offset-2 hover:text-cyan-700 transition-colors"
+          >
+            お腹の症状で大学を2度中退した私が、ITとリモートワークに救われた話
+          </Link>
         </section>
 
         <section className="mb-12">
@@ -231,7 +237,7 @@ export default function page() {
             <span className="w-1 h-8 bg-cyan-600 rounded-full" />
             好きなこと・趣味
           </h2>
-          <p className="mb-6">
+          <p className="mb-6 leading-relaxed">
             🚶毎朝のウォーキング
             <br />
             🚲クロスバイク爆走すること
@@ -244,7 +250,7 @@ export default function page() {
             <br />
             ⌨️最近、自作キーボード作りの沼に足を踏み入れました。
           </p>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-3">
             <Image
               src="/images/my-profile3.jpg"
               width={400}
@@ -268,8 +274,9 @@ export default function page() {
             />
           </div>
         </section>
+
         <Link href="/about" scroll={true}>
-          <GoMoveToTop className="text-4xl text-foreground dark:text-foreground/60 fixed bottom-4 right-4" />
+          <GoMoveToTop className="text-4xl text-foreground dark:text-foreground/60 fixed bottom-4 right-4 hover:text-cyan-600 transition-colors" />
         </Link>
       </div>
     </div>

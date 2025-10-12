@@ -7,7 +7,7 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 export default function About() {
   return (
     <section id="about" className="font-sans">
-      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-cyan-600 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-cyan-600 dark:text-foreground/80 mb-4">
         ABOUT
       </h1>
 

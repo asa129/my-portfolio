@@ -4,7 +4,7 @@ import TechStack from "./molecules/techStack";
 export default function Experience() {
   return (
     <section id="experience">
-      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl text-xl font-bold text-foreground/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl text-xl font-bold text-cyan-600 dark:text-foreground/80  mb-4">
         My Experience
       </h1>
       <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">

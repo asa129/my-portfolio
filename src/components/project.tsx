@@ -9,7 +9,7 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 export default function Project() {
   return (
     <section id="project" className="">
-      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-foreground dark:text-foreground/80 mb-4">
+      <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 xl:text-2xl lg:text-xl text-lg font-bold text-cyan-600 dark:text-foreground/80  mb-4">
         My Project
       </h1>
       <div className="text-foreground dark:text-foreground/60">

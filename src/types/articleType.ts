@@ -6,4 +6,5 @@ export type ArticleType = {
   likes_count: number;
   stocks_count: number;
   ogpImage: string;
+  comment: string;
 };

@@ -44,3 +44,10 @@ next-env.d.ts
 .open-next
 .wrangler/
 .dev.vars
+
+# images
+hackathon1.png
+hackathon2.png
+my-chart.png
+my-profile2.jpg
+my-profile3.jpg
