@@ -16,32 +16,45 @@ export default function page() {
           </Link>
         </div>
         <header className="mb-12 border-b border-border pb-6">
-          <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 lg:text-4xl text-2xl text-cyan-600 mb-3">
-            竹下 朝香
-          </h1>
-          <h2 className="mb-4 text-xl">Takeshita Asaka</h2>
-          <div className="flex gap-6 text-2xl">
-            <Link
-              href="https://qiita.com/asa129"
-              target="_blank"
-              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
-            >
-              <SiQiita />
-            </Link>
-            <Link
-              href="https://x.com/jad1290"
-              target="_blank"
-              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
-            >
-              <FaXTwitter />
-            </Link>
-            <Link
-              href="https://github.com/asa129"
-              target="_blank"
-              className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
-            >
-              <FaGithub />
-            </Link>
+          <div className="flex flex-col md:flex-row md:justify-between gap-8">
+            <div className="flex-1">
+              <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 lg:text-4xl text-2xl text-cyan-600 mb-3">
+                竹下 朝香
+              </h1>
+              <h2 className="mb-4 text-xl">Takeshita Asaka</h2>
+              <div className="flex gap-6 text-2xl">
+                <Link
+                  href="https://qiita.com/asa129"
+                  target="_blank"
+                  className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+                >
+                  <SiQiita />
+                </Link>
+                <Link
+                  href="https://x.com/jad1290"
+                  target="_blank"
+                  className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+                >
+                  <FaXTwitter />
+                </Link>
+                <Link
+                  href="https://github.com/asa129"
+                  target="_blank"
+                  className="text-foreground dark:text-foreground/60 hover:text-cyan-600/90 transition-colors"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
+            </div>
+            <div className="flex-shrink-0">
+              <Image
+                src="/images/my-profile2.jpg"
+                width={400}
+                height={400}
+                alt="profile"
+                className="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover shadow-lg"
+              />
+            </div>
           </div>
         </header>
 
@@ -137,28 +150,41 @@ export default function page() {
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             周りから言われること
           </h2>
-          <p className="leading-relaxed">
-            <b>同期からもらった評価</b>
-            <br />
-            <span className="inline-block w-0.5 h-8 bg-cyan-600 rounded-full mr-3 ml-3 my-2 align-middle" />
-            「控えめだけど意外と頑固さもある骨太女子」「繊細だけども意外とタフ」
-            <br />
-            意見と批判を区別して理解することを意識しています。
-            <br />
-            もっと良くできると思ったことには、粘り強く取り組みます。
-            <br />
-            <br />
-            <b>上司からいただいた評価</b>
-            <br />
-            「丁寧で真面目」「思ったより頑固で負けず嫌い」
-            <br />
-            <span className="inline-block w-0.5 h-8 bg-cyan-600 rounded-full mr-3 ml-3 my-2 align-middle" />
-            「女性は受け身で前に出ない人が多いと思ってたけど、あなたはちゃんと言ってくれるから助かる」
-            <br />
-            と言っていただいたことがあります。
-            <br />
-            疑問に思ったことや改善提案は、遠慮せずに発言するようにしています。
-          </p>
+
+          <div className="pl-6 md:pl-8 space-y-8">
+            <div>
+              <h3 className="text-base font-semibold text-foreground mb-4 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                同期からもらった評価
+              </h3>
+              <div className="pl-6 space-y-3 text-base text-foreground/90 leading-relaxed">
+                <p className="italic text-foreground/80">
+                  「控えめだけど意外と頑固さもある骨太女子」「繊細だけども意外とタフ」
+                </p>
+                <p>
+                  意見と批判を区別して理解することを意識しています。もっと良くできると思ったことには、粘り強く取り組みます。
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-base font-semibold text-foreground mb-4 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                上司からいただいた評価
+              </h3>
+              <div className="pl-6 space-y-3 text-base  text-foreground/90 leading-relaxed">
+                <p className="italic text-foreground/80">
+                  「丁寧で真面目」「思ったより頑固で負けず嫌い」
+                </p>
+                <p className="italic text-foreground/80 font-semibold">
+                  「女性は受け身で前に出ない人が多いと思ってたけど、あなたはちゃんと言ってくれるから助かる」
+                </p>
+                <p>
+                  と言っていただいたことがあります。疑問に思ったことや改善提案は、遠慮せずに発言するようにしています。
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="mb-12">
@@ -166,32 +192,46 @@ export default function page() {
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             組織の中で大切にしていること、実践していること
           </h2>
-          <h3 className="mb-4 text-lg tracking-tight text-foreground font-semibold">
-            実践していること
-          </h3>
-          <p className="mb-6 leading-relaxed">
-            <b>「次に担当する人が困らない」</b>
-            を意識して業務に携わっています。
-            <br />
-            誰もわからない状態だったシステムの仕様や調べないとわからなかったことに対して、リーダーやチームメンバーに相談しつつ、
-            不明点を解消し、誰が担当しても再現できるように必ずドキュメントを残すようにしました。
-            <br />
-            機能追加や改修の実装では、どの人が担当しても困らないように共通化したり、容易にわかるように実装することを心がけています。
-            <br />
-            チーム内の後輩には、自分がしてもらったようにまずは行動してもらうことを意識しています。
-            <br />
-            一年目のときに、まずは挑戦させるリーダーの元、レビューやフィードバック、失敗を通して多くのことを学びました。
-            <br />
-            その経験から、安心して相談でき、否定から始まらない環境を作りたいと考えています。
-          </p>
-          <h3 className="mb-4 text-lg tracking-tight text-foreground font-semibold">
-            目指していること
-          </h3>
-          <p className="leading-relaxed">
-            思いやりがあり、環境や制約の中でも最善の解決策を見出すチーム。
-            <br />
-            誰かのせいにせず、失敗を許容し、何事にも挑戦できる文化を大切にしたいです。
-          </p>
+          <div className="pl-6 md:pl-8 space-y-8">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-5 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                実践していること
+              </h3>
+              <div className="pl-6 space-y-4 text-base text-foreground/90 leading-relaxed">
+                <p>
+                  <b>「次に担当する人が困らない」</b>
+                  を意識して業務に携わっています。
+                </p>
+                <p>
+                  誰もわからない状態だったシステムに携わったことがありました。リーダーやチームメンバーに相談し、不明点を解消、誰が担当しても再現できるように必ずドキュメントを残すようにしました。
+                  <br />
+                  機能追加や改修の実装では、どの人が担当しても困らないように共通化したり、容易にわかるように実装することを心がけています。
+                </p>
+                <p>
+                  チーム内の後輩には、自分が経験させてもらったように、まずは行動してもらうことを意識しています。
+                  <br />
+                  一年目の時に、まずは挑戦させるリーダーの元、レビューやフィードバック、失敗を通して多くのことを学びました。
+                  <br />
+                  その経験から、安心して相談でき、否定から始まらない環境を作りたいと考えています。
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-5 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                目指していること
+              </h3>
+              <div className="pl-6 space-y-3 text-base text-foreground/90 leading-relaxed">
+                <p>
+                  思いやりがあり、環境や制約の中でも最善の解決策を見出すチーム。
+                  <br />
+                  誰かのせいにせず、失敗を許容し、何事にも挑戦できる文化を大切にしたいです。
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="mb-12">
@@ -199,37 +239,54 @@ export default function page() {
             <span className="inline-block w-1 h-8 bg-cyan-600 rounded-full mr-3 align-middle" />
             今後どうしていきたいか
           </h2>
-          <p className="mb-4 leading-relaxed text-lg">
-            私の目標は、2つあります。
-          </p>
-          <h3 className="mb-2 text-lg tracking-tight text-foreground font-semibold">
-            1.運用しやすいシステムを作れる人材になること
-          </h3>
-          <p className="mb-4 leading-relaxed">
-            「作って終わり」ではなく、使い続けてもらえるものを作れる人になりたいと思っています。
-            <br />
-            運用が容易にできてかつ、そこからよりよいものをつくってもらえるにはどうしたらいいか、
-            保守しやすいシステムとはどのように作れることができるのかを学び、「使う人」「提供したい人」「メンテナンスする人」全ての人がより良いものを作れる仕組みづくりを習得したいです。
-          </p>
-          <h3 className="mb-2 text-lg tracking-tight text-foreground font-semibold">
-            2.体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
-          </h3>
-          <p className="mb-4 leading-relaxed">
-            私自身、大学を2度中退し、働くことに絶望していた時期がありました。
-            <br />
-            しかし、リモートワークとITに出会い、「体調や環境に制約があっても働ける」という選択肢があることを知りました。
-            同じように悩んでいる人に、選択肢があることを伝えたい。絶望しないで欲しい。
-            <br />
-            そして、
-            活躍できる環境を増やすために開発者としてサービスや仕組みを作りたいと考えています。
-          </p>
-          <Link
-            href="https://qiita.com/asa129/items/fad180b79a9bc68e978a"
-            target="_blank"
-            className="inline-block text-cyan-600 underline underline-offset-2 hover:text-cyan-700 transition-colors"
-          >
-            お腹の症状で大学を2度中退した私が、ITとリモートワークに救われた話
-          </Link>
+          <div className="pl-6 md:pl-8 space-y-8">
+            <p className="text-base font-medium text-foreground/90 leading-relaxed">
+              私の目標は、2つあります。
+            </p>
+
+            <div>
+              <h3 className="font-semibold text-foreground mb-4 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                1. 運用しやすいシステムを作れる人材になること
+              </h3>
+              <div className="pl-6 space-y-3 text-base text-foreground/90 leading-relaxed">
+                <p>
+                  「作って終わり」ではなく、使い続けてもらえるものを作れる人になりたいと思っています。
+                </p>
+                <p>
+                  運用が容易にできてかつ、そこからよりよいものをつくってもらえるにはどうしたらいいか、保守しやすいシステムとはどのように作れることができるのかを学び、「使う人」「提供したい人」「メンテナンスする人」全ての人がより良いものを作れる仕組みづくりを習得したいです。
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-foreground mb-4 flex items-center gap-3">
+                <span className="w-1 h-6 bg-cyan-600/70 rounded-full" />
+                2.
+                体調や環境の制約がある人も活躍できるようなWebサービスや仕組みづくりを生み出すこと
+              </h3>
+              <div className="pl-6 space-y-3 text-base text-foreground/90 leading-relaxed">
+                <p>
+                  私自身、大学を2度中退し、働くことに絶望していた時期がありました。
+                </p>
+                <p>
+                  しかし、リモートワークとITに出会い、「体調や環境に制約があっても働ける」という選択肢があることを知りました。同じように悩んでいる人に、選択肢があることを伝えたい。絶望しないで欲しい。
+                  <br />
+                  そして、活躍できる環境を増やすために開発者としてサービスや仕組みを作りたいと考えています。
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 pl-6">
+              <Link
+                href="https://qiita.com/asa129/items/fad180b79a9bc68e978a"
+                target="_blank"
+                className="inline-block text-cyan-600 underline underline-offset-2 hover:text-cyan-700 transition-colors"
+              >
+                お腹の症状で大学を2度中退した私が、ITとリモートワークに救われた話
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="mb-12">
@@ -273,6 +330,14 @@ export default function page() {
               className="rounded-lg"
             />
           </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="mb-6 text-2xl tracking-tight text-foreground flex items-center gap-3">
+            <span className="w-1 h-8 bg-cyan-600 rounded-full" />
+            自己紹介動画
+          </h2>
+          <video src="/movies/selfmovie.mp4" controls />
         </section>
 
         <Link href="/about" scroll={true}>

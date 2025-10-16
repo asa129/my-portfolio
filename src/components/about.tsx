@@ -24,7 +24,7 @@ export default function About() {
           width={100}
           height={100}
           alt="sake"
-          className="rounded-full mx-16 w-32 h-32 flex-shrink-0 overflow-hidden  "
+          className="rounded-full mx-16 w-32 h-32 flex-shrink-0 overflow-hidden shadow-lg"
         />
       </div>
       <article>
