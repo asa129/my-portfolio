@@ -58,7 +58,7 @@ export default function Project() {
         </Link>
 
         <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
-          {/* アウトップサポートサービス */}
+          {/* アウトプットサポートサービス */}
           <Image
             src="/images/character_program_fast.png"
             width={300}
@@ -68,13 +68,13 @@ export default function Project() {
           />
           <div className="xl:col-span-1 lg:col-span-3 mx-2">
             <h3 className="text-xl font-bold text-foreground dark:text-foreground/80 my-2">
-              アウトップサポートサービス（開発中）
+              アウトプットサポートサービス（開発中）
             </h3>
             <p className="text-foreground dark:text-foreground/60 text-sm">
               2025-09 ~
               <br />
               <br />
-              小さなハードルからアウトップを容易に促し、定着を促すサービスを開発中です。
+              小さなハードルからアウトプットを容易に促し、定着を促すサービスを開発中です。
               <br />
               勉強してるのに身にならないと悩む人に、このサービスを届けたいと考えています。
               <br />

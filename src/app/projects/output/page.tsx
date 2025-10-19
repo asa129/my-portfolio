@@ -16,7 +16,7 @@ export default function page() {
         </div>
         <section className="mb-12">
           <h1 className="lg:static sticky top-0 lg:bg-background/0 bg-background/20 lg:text-4xl text-lg text-cyan-600 mb-4">
-            アウトップサポートサービス（開発中）
+            アウトプットサポートサービス（開発中）
           </h1>
           <h2 className="mb-4">2025-09 ~ </h2>
           <p className="flex items-center gap-2 lg:text-sm text-xs text-foreground dark:text-foreground/60 mb-2">
