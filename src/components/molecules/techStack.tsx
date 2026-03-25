@@ -1,12 +1,15 @@
 import React, { JSX } from "react";
 import { Badge } from "../ui/badge";
 import {
+  SiAmazonwebservices,
+  SiAwslambda,
   SiBootstrap,
   SiChakraui,
   SiCheerio,
   SiClaude,
   SiCloudflare,
   SiDaisyui,
+  SiDocker,
   SiFirebase,
   SiGithubactions,
   SiJavascript,
@@ -17,10 +20,12 @@ import {
   SiOracle,
   SiPostgresql,
   SiPuppeteer,
+  SiPython,
   SiReacthookform,
   SiSpring,
   SiSupabase,
   SiTailwindcss,
+  SiTerraform,
   SiTypescript,
   SiVite,
   SiVitest,
@@ -62,6 +67,10 @@ const techStackItems: { id: string; icon: JSX.Element | null; name: string }[] =
     { id: "linux", icon: <SiLinux />, name: "Linux" },
     { id: "bootstrap", icon: <SiBootstrap />, name: "Bootstrap" },
     { id: "jquery", icon: <SiJquery />, name: "jQuery" },
+    { id: "aws", icon: <SiAmazonwebservices />, name: "AWS" },
+    { id: "terraform", icon: <SiTerraform />, name: "Terraform" },
+    { id: "docker", icon: <SiDocker />, name: "Docker" },
+    { id: "python", icon: <SiPython />, name: "Python" },
   ];
 
 export default function techStack(props: { id: string }) {

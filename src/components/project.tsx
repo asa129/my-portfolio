@@ -57,9 +57,9 @@ export default function Project() {
           </div>
         </Link>
 
-        <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
+        {/* <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral">
           {/* アウトプットサポートサービス */}
-          <Image
+          {/* <Image
             src="/images/character_program_fast.png"
             width={300}
             height={300}
@@ -85,7 +85,7 @@ export default function Project() {
               そこで、ハードルを設けずにアウトプット（アクティブリコール）を行える、インプット時に少しでも定着を促すサービスを開発することを決意しました。
             </p>
             {/* 使用技術 */}
-            <div className="flex flex-wrap gap-2 mt-4">
+            {/* <div className="flex flex-wrap gap-2 mt-4">
               <TechStack id="react" />
               <TechStack id="typescript" />
               <TechStack id="nextjs" />
@@ -95,8 +95,8 @@ export default function Project() {
               <TechStack id="vitest" />
             </div>
           </div>
-        </div>
-        <Button
+        </div> */}
+        {/* <Button
           variant="ghost"
           className="text-foreground dark:text-foreground/60 hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-neutral flex justify-end"
         >
@@ -107,7 +107,7 @@ export default function Project() {
             ⇒ サービス考案資料
           </Link>
           <RxOpenInNewWindow />
-        </Button>
+        </Button> */}
         {/* 学習で作ったプロジェクト */}
         <div className="mt-10">
           <p className="text-md text-foreground dark:text-foreground/80">

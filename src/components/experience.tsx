@@ -9,11 +9,48 @@ export default function Experience() {
       </h1>
       <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
         <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
+          <h2 className="text-xl font-semibold text-foreground/80">自動車業界</h2>
+          <h3 className="text-xl font-semibold text-foreground/80 mr-2">
+            自動運転システム開発環境のインフラ構築、運用、運用の自動化
+          </h3>
+          <span className="text-sm text-foreground/50">2025年2月 -</span>
+        </div>
+        <div className="xl:col-span-1 lg:col-span-3 mx-2">
+          <div className="flex justify-between items-start mb-3">
+            <div>
+              <p className="text-md text-foreground dark:text-foreground/60">
+                業務内容
+              </p>
+              <p className="text-sm text-foreground dark:text-foreground/60 mt-1">
+                某自動車メーカーの自動運転システム開発環境のインフラ構築、運用、運用の自動化を担当
+                <br />
+                手作業で実施していた運用作業の自動化ポジションでアサイン
+                <br />
+                ・AWS上でのインフラ構築、運用 
+                <br />
+                ・コスト削減のためのリソース整理、検知ツールの作成
+                <br />
+                ・運用作業の自動化のためのツール作成
+                <br />
+              </p>
+            </div>
+          </div>
+          {/* 使用技術 */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            <TechStack id="python" />
+            <TechStack id="aws" />
+            <TechStack id="terraform" />
+            <TechStack id="docker" />
+          </div>
+        </div>
+      </div>
+      <div className="grid xl:grid-cols-2 lg:grid-cols-5 xl:m-4 p-2 my-2 rounded items-start hover:bg-cyan-200/20 hover:dark:bg-cyan-50/5 hover:text-accent-foreground my-4 p-2">
+        <div className="text-sm text-foreground/50 xl:col-span-1 lg:col-span-2">
           <h2 className="text-xl font-semibold text-foreground/80">銀行業界</h2>
           <h3 className="text-xl font-semibold text-foreground/80 mr-2">
             インターネットバンキング、コールセンターオペレーター向けシステム保守
           </h3>
-          <span className="text-sm text-foreground/50">2024年4月 -</span>
+          <span className="text-sm text-foreground/50">2024年4月 - 2025年11月</span>
         </div>
         <div className="xl:col-span-1 lg:col-span-3 mx-2">
           <div className="flex justify-between items-start mb-3">
